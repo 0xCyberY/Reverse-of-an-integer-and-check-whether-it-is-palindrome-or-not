@@ -5,11 +5,10 @@ int main()
 	printf("Enter any number :\n ");
 	scanf("%d", &num);
 	orign = num;
-	while (num!= 0)
+	for(i=num;i!=0;i=i/10)
 	{
-	rem = num % 10;
+	rem = i% 10;
 	rev = rev * 10 + rem;
-	num = num / 10;
 	}
 	printf("Reversed Number : %d\n", rev);
 	printf("Original Number : %d\n", orign);
